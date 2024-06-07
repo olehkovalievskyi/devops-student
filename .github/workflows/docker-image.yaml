@@ -44,10 +44,7 @@ jobs:
           context: ./web
           file: ./web/Dockerfile
           push: true
-          tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/web-test:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/web-test:${{ github.sha }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/web-test:${{ env.VERSION }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/web-test:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
 
