@@ -7,9 +7,7 @@ on:
     tags:
       - "v*"
     paths:
-      - "./web/Dockerfile"
-      - "./web/*.mjs"
-      - "./web/*.json"
+      - "./web/**"
 
 jobs:
   build:
