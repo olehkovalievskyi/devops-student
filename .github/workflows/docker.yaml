@@ -1,4 +1,4 @@
-name: devops-student
+name: docker-image-build
 
 on:
   push:
