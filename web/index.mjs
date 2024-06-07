@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send(helloMessage)
 })
 
-app.get("/photos", async (req, res) => {
+app.get("/photo", async (req, res) => {
   const url = 'https://jsonplaceholder.typicode.com/photos'
   const response = await fetch(url);
   const body = await response.text();
