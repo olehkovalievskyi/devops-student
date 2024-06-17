@@ -5,8 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'terraform/**.tf'
-      - '!**.md'
+      - "terraform/**"
 
 permissions:
   id-token: write
