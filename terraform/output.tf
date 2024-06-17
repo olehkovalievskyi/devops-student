@@ -1,3 +1,7 @@
-output client_current_config {
-  value       = data.azurerm_client_config.current
+output storage_name {
+    value = module.storage.storage_name
+}
+
+output resource_group {
+    value = "name: ${azurerm_resource_group.current.name}, location: ${azurerm_resource_group.current.location}"
 }
